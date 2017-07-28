@@ -1,0 +1,11 @@
+version: '2'
+services:
+  ghostjs:
+    container_name: ghostjs
+    build:
+      context: ./
+    ports:
+      - "9000:9000"
+    hostname: localhost
+    environment:
+      - DEBUG=*
